@@ -41,3 +41,9 @@ body {
 h3 {
   color: whitesmoke;
 }
+.from {
+  text-align: right;
+}
+p {
+  margin: 5px 0 0 0;
+}
