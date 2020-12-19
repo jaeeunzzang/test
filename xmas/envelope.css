@@ -18,6 +18,9 @@ body {
   color: white;
 }
 
+.cardOpen {
+  display: none;
+}
 .cardImg {
   width: 200px;
   height: 200px;
