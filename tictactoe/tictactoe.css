@@ -1,0 +1,19 @@
+.wrap {
+  margin: 0 20%;
+}
+
+#rowWrap {
+  width: 100%;
+  display: flex; /*div 수평 정렬*/
+  flex-flow: row wrap;
+}
+
+.row {
+  position: relative;
+  border: 1px solid gray;
+  width: 30%; /*width 설정으로 한줄에 정렬될 div갯수 설정.*/
+  height: 100px;
+}
+div#alert {
+  color: red;
+}

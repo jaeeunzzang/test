@@ -1,0 +1,2 @@
+- [x] tictactoe 보드 만들기
+- [x] winCheck 만들깅..
