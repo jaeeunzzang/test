@@ -18,11 +18,6 @@ body {
   color: white;
 }
 
-.letterClose {
-}
-.cardOpen {
-  display: none;
-}
 .cardImg {
   width: 200px;
   height: 200px;
