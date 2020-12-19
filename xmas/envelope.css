@@ -47,3 +47,8 @@ h3 {
 p {
   margin: 5px 0 0 0;
 }
+@media screen and (max-width: 340px) {
+  .card {
+    width: 200px;
+  }
+}
