@@ -1,0 +1,43 @@
+* {
+  font-family: "Do Hyeon", sans-serif;
+}
+body {
+  background-color: #9b070f;
+  text-align: center;
+}
+.envelope {
+  width: 200px;
+  height: 200px;
+  background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+  background-size: cover;
+  background-position: center;
+  margin: 200px auto 0 auto;
+}
+.message {
+  color: white;
+}
+
+.letterClose {
+  display: none;
+}
+.cardImg {
+  width: 200px;
+  height: 200px;
+  background-image: url("https://t1.daumcdn.net/cfile/tistory/9974B74E5A3B690C06");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 0px blanchedalmond;
+  margin: 80px auto 0 auto;
+}
+.card {
+  width: 300px;
+  box-shadow: 0px 0px 10px 0px blanchedalmond;
+  background-color: blanchedalmond;
+  margin: 50px auto 0 auto;
+  padding: 3%;
+  line-height: 30px;
+}
+h3 {
+  color: whitesmoke;
+}
