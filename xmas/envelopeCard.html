@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2020년을 보내며</title>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
@@ -20,7 +21,7 @@
 
     <!--card 내용 페이지-->
     <div class="cardOpen">
-      <div class="cardImg"></div>
+      <div class="cardImg" onclick="alertMsg()"></div>
       <h3>2020년 고생 많았어요 :)</h3>
       <div class="card">
         친구들에게. <br />
@@ -33,6 +34,14 @@
     </div>
   </body>
   <script>
-    function cardOpen() {}
+    function cardOpen() {
+      var envelope = document.getElementsByClassName("letterClose")[0];
+      envelope.style.display = "none";
+      document.getElementsByClassName("cardOpen")[0].style.display = "block";
+    }
+    function alertMsg() {
+      alert("연락좀해라 칭구야<3");
+      document.location.href = "https://www.instagram.com/jan_kawai/";
+    }
   </script>
 </html>
