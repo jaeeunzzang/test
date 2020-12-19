@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <style>
+      .wrap {
+        /*양쪽 여백이 동일하다: 가운데로 온다는 뜻*/
+        width: 300px; /*가로 길이를 주고*/
+        margin: auto; /* auto: 여백을 동일하게 준다*/
+      }
       .myTitle {
         color: white;
         text-align: center;
         width: 300px;
-        height: 300px;
+        height: 200px;
+
         background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
         background-size: cover;
         background-position: center; /* img의 위치 */
-        border-radius: 10px;
+
+        border-radius: 10px; /*모서리 둥글게*/
+        padding-top: 20px;
       }
       #myBtn {
-        margin: 20px;
+        border-radius: 2px;
+        background-color: white;
       }
     </style>
   </head>
   <body>
-    <div class="myTitle">
-      <h1>로그인 페이지</h1>
-      <h5>id , 비밀번호를 입력해 주세요</h5>
+    <div class="wrap">
+      <div class="myTitle">
+        <h1>로그인 페이지</h1>
+        <h5>id , 비밀번호를 입력해 주세요</h5>
+      </div>
+      <p>ID: <input type="text" /></p>
+      <p>PW:<input type="password" /></p>
+      <input type="button" value="로그인하기" id="myBtn" />
     </div>
-
-    <p>ID: <input type="text" /></p>
-    <p>PW:<input type="password" /></p>
-    <input type="button" value="로그인하기" id="myBtn" />
   </body>
 </html>
