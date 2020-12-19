@@ -28,15 +28,17 @@
         color: white;
         text-align: center;
       }
-      .letterClose {
-        display: none;
-      }
     </style>
   </head>
   <body>
-    <div class="letterClose">
-      <div class="envelope"></div>
+    <div>
+      <div class="envelope" onclick="link()"></div>
       <h2 class="message">봉투를 열어봐 :)</h2>
     </div>
   </body>
+  <script>
+    function link() {
+      document.location.href = "card.html";
+    }
+  </script>
 </html>
