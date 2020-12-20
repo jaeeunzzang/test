@@ -3,6 +3,9 @@ var restartButton = document.getElementById("restart");
 var flag = true;
 const player1 = "O";
 const player2 = "X";
+var p1Win = 0;
+var p2Win = 0;
+var draw = 0;
 drawBoard(); //보드 그려주면서 시작
 
 function startGame() {
