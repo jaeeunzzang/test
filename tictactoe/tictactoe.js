@@ -5,7 +5,7 @@ const player1 = "O";
 const player2 = "X";
 var p1Win = 0;
 var p2Win = 0;
-var draw = 0;
+var drawCnt = 0;
 drawBoard(); //보드 그려주면서 시작
 
 function startGame() {
@@ -35,8 +35,14 @@ function drawBoard() {
   //게임판 그려주는 함수
   var player = document.getElementById("player");
   var rowWrap = document.getElementById("rowWrap");
+  var player1Win = document.getElementById("player1Win");
+  var player2Win = document.getElementById("player2Win");
+  var draw = document.getElementById("draw");
   player.innerHTML = player1;
   rowWrap.innerHTML = "";
+  player1Win.innerHTML = p1Win;
+  player2Win.innerHTML = p2Win;
+  draw.innerHTML = drawCnt;
   for (let index = 0; index < 9; index++) {
     var row = document.createElement("div");
     row.setAttribute("class", "row");
