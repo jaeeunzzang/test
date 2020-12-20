@@ -98,27 +98,35 @@ function winCheck() {
   var cross2 = [row2.length, row4.length, row6.length];
 
   if (!tuple1.includes(0) && row0 == row1 && row1 == row2) {
+    winCnt(row0);
     alert(row0 + " Player Win");
     gameOver();
   } else if (!tuple2.includes(0) && row3 == row4 && row4 == row5) {
+    winCnt(row3);
     alert(row3 + " Player Win");
     gameOver();
   } else if (!tuple3.includes(0) && row6 == row7 && row7 == row8) {
+    winCnt(row6);
     alert(row6 + " Player Win");
     gameOver();
   } else if (!column1.includes(0) && row0 == row3 && row3 == row6) {
+    winCnt(row0);
     alert(row0 + " Player Win");
     gameOver();
   } else if (!column2.includes(0) && row1 == row4 && row4 == row7) {
+    winCnt(row1);
     alert(row1 + " Player Win");
     gameOver();
   } else if (!column3.includes(0) && row2 == row5 && row5 == row8) {
+    winCnt(row2);
     alert(row2 + " Player Win");
     gameOver();
   } else if (!cross1.includes(0) && row0 == row4 && row4 == row8) {
+    winCnt(row0);
     alert(row0 + " Player Win");
     gameOver();
   } else if (!cross2.includes(0) && row2 == row4 && row4 == row6) {
+    winCnt(row2);
     alert(row2 + " Player Win");
     gameOver();
   } else if (
@@ -126,7 +134,15 @@ function winCheck() {
     !column2.includes(0) &&
     !column3.includes(0)
   ) {
+    drawCnt += 1;
     alert("draw");
     gameOver();
+  }
+}
+function winCnt(player) {
+  if (player == player1) {
+    p1Win += 1;
+  } else {
+    p2Win += 1;
   }
 }
